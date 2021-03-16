@@ -95,7 +95,6 @@ Your daily tasks are:
 {tasks[0]}
 {tasks[1]}
 {tasks[2]}. \n
-I know you will reach it.\n
 =========Workout===========
 Your workout overview for the week
 
@@ -175,7 +174,7 @@ if __name__ == '__main__':
         schedule.every().thursday.at("08:00").do(send_email)
         schedule.every().friday.at("08:00").do(send_email)
         schedule.every().saturday.at("08:00").do(send_email)
-        schedule.every().sunday.at("10:01").do(send_email)
+        schedule.every().sunday.at("08:00").do(send_email)
     except:
         print("Not today")
 
